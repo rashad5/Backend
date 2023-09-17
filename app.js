@@ -1,7 +1,7 @@
 var cors = require('cors');
 const express = require("express");
 const mysql = require("mysql2");
-const { resourceLimits } = uodru6c0reoxvzdsrequire("worker_threads");
+const { resourceLimits } = ("worker_threads");
 
 
 const app = express();
@@ -68,8 +68,8 @@ app.post("/users", (req, res) => {
   let obj = req.body;
   console.log(obj);
     connection.query(
-      `INSERT INTO users (ID, Name, Surname, Password, Address)
-      VALUES ("${obj.cid}", "${obj.name}", "${obj.surname}", "${obj.password}", "${obj.address}")`,
+      `INSERT INTO users (ID, Name, Surname, Password)
+      VALUES ("${obj.cid}", "${obj.name}", "${obj.surname}", "${obj.password}")`,
       function (err, result, fields) {
           res.send(result);
       }
@@ -77,4 +77,4 @@ app.post("/users", (req, res) => {
   });
         
 
-  app.listen( 3306 || 3001);
+  app.listen( 3306 || 3000);
