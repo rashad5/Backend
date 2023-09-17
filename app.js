@@ -9,10 +9,10 @@ app.use(cors());
 app.use(express.json());
 
   let connection = mysql.createConnection({
-    host: "bfsrwmygpfnliot7if34-mysql.services.clever-cloud.com",
-    user: "uodru6c0reoxvzds",
-    password: "66GmTjUrFjSGaKlQEckD",
-    database: "bfsrwmygpfnliot7if34",
+    host: "b4cm8t3vkrtn184xcyzf-mysql.services.clever-cloud.com",
+    user: "u6wakl7b5op3f5yq",
+    password: "q8leQu1uW4SacY9FucVL",
+    database: "b4cm8t3vkrtn184xcyzf",
   });
   app.get("/users", function (req, res) {
    
